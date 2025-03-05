@@ -1,5 +1,3 @@
-
-
 /* Encabezado */
 header {
     display: flex;
@@ -55,9 +53,14 @@ nav ul li a {
     z-index: 1;
 }
 
-/* Contenedor principal */
+/* Contenedor principal con imagen de fondo */
 main {
     margin-right: 70px; /* Ajuste para el menú flotante */
+    background-image: url('../img/fondo.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
 }
 
 /* Sección de información */
@@ -139,7 +142,6 @@ footer {
     opacity: 1;
     left: 55px;
 }
-
 
 /* Media Queries */
 @media (max-width: 768px) {
